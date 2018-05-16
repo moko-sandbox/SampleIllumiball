@@ -355,6 +355,7 @@ GameObject:
   m_Component:
   - component: {fileID: 395990856}
   - component: {fileID: 395990855}
+  - component: {fileID: 395990857}
   m_Layer: 0
   m_Name: HoleRed
   m_TagString: Untagged
@@ -388,6 +389,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &395990857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 395990854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad3eec0f9f78041feb8acded05e1deb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeTag: BallRed
 --- !u!1 &431161162
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,6 +410,7 @@ GameObject:
   m_Component:
   - component: {fileID: 431161164}
   - component: {fileID: 431161163}
+  - component: {fileID: 431161165}
   m_Layer: 0
   m_Name: HoleBlue
   m_TagString: Untagged
@@ -430,6 +444,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &431161165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 431161162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad3eec0f9f78041feb8acded05e1deb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeTag: BallBlue
 --- !u!1 &453049055
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,7 +571,7 @@ GameObject:
   - component: {fileID: 558293835}
   m_Layer: 0
   m_Name: BallBlue
-  m_TagString: Untagged
+  m_TagString: BallBlue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1297,6 +1323,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1235573507}
   - component: {fileID: 1235573506}
+  - component: {fileID: 1235573508}
   m_Layer: 0
   m_Name: HoleGreen
   m_TagString: Untagged
@@ -1330,6 +1357,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1235573508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1235573505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad3eec0f9f78041feb8acded05e1deb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeTag: BallGreen
 --- !u!1 &1451087009
 GameObject:
   m_ObjectHideFlags: 0
@@ -1425,7 +1464,7 @@ GameObject:
   - component: {fileID: 1580353911}
   m_Layer: 0
   m_Name: BallRed
-  m_TagString: Untagged
+  m_TagString: BallRed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1632,7 +1671,7 @@ GameObject:
   - component: {fileID: 2086492611}
   m_Layer: 0
   m_Name: BallGreen
-  m_TagString: Untagged
+  m_TagString: BallGreen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
