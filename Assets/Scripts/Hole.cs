@@ -4,8 +4,35 @@ using UnityEngine;
 
 public class Hole : MonoBehaviour
 {
+	bool fallIn;
+
 	// どのボールをすいよせるかをタグで指定
 	[SerializeField] string activeTag;
+
+	// ボールが入っているかを返す
+	public bool IsFallIn()
+	{
+		return fallIn;
+	}
+
+	// コライダーにオブジェクトが入った瞬間
+	private void OnTriggerEnter(Collider other)
+	{
+		if (other.gameObject.tag == activeTag)
+		{
+			fallIn = true;
+		}
+	}
+
+	// コライダーにオブジェクトが出た瞬間
+	private void OnTriggerExit(Collider other)
+	{
+		if(other.gameObject.tag == activeTag)
+		{
+			fallIn = false;
+		}
+	}
+
 
     // オブジェクト同士のコリジョンが発生している時に毎フレーム呼ばれる
     private void OnTriggerStay(Collider other)
